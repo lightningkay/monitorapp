@@ -1,0 +1,13 @@
+package bjut;
+
+message Query {
+    required int32 id = 1;
+    optional int32 time = 2;
+}
+
+message Login {
+    required int32 id = 1;
+    required string username = 2;
+    required string passwd = 3;
+}
+

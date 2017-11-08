@@ -1,0 +1,20 @@
+package bjut;
+
+message Response {
+    enum Status {
+        OK = 0;
+        ERROR = 1;
+    }
+    required int32 id = 1;
+    required Status status = 2;
+}
+
+message Record {
+required int32 time = 1;
+required float stress = 2;
+required float angle = 3;
+}
+
+message Records {
+    repeated Record datas = 1;
+}
