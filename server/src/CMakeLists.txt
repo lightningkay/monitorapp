@@ -10,6 +10,8 @@ set_source_files_properties(query.pb.cc response.pb.cc PROPERTIES COMPILE_FLAGS 
 include_directories(${PROJECT_SOURCE_DIR}/src)
 include_directories(${PROJECT_BINARY_DIR}/src)
 set(SOURCEFILES main.cc
+                codec.cc
+                monitorserver.cc
                 query.pb.cc
                 response.pb.cc)
 add_executable(webmonitor ${SOURCEFILES})

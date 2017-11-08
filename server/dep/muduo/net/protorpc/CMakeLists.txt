@@ -5,7 +5,7 @@ add_custom_command(OUTPUT rpc.pb.cc rpc.pb.h
   VERBATIM )
 
 set_source_files_properties(rpc.pb.cc PROPERTIES COMPILE_FLAGS "-Wno-conversion")
-include_directories(${PROJECT_BINARY_DIR}/dependencies)
+include_directories(${PROJECT_BINARY_DIR}/dep)
 
 add_library(muduo_protorpc_wire rpc.pb.cc RpcCodec.cc)
 set_target_properties(muduo_protorpc_wire PROPERTIES COMPILE_FLAGS "-Wno-error=shadow")

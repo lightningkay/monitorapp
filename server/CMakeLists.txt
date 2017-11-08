@@ -84,11 +84,11 @@ message(STATUS "CXX_FLAGS = " ${CMAKE_CXX_FLAGS} " " ${CMAKE_CXX_FLAGS_${BUILD_T
 
 
 include_directories(${Boost_INCLUDE_DIRS})
-set(DEPEND dependencies/)
+set(DEPEND dep)
 include_directories(${PROJECT_SOURCE_DIR}/${DEPEND})
 
 set(CMAKE_BUILD_NO_EXAMPLES YES)
 
-add_subdirectory(${DEPEND}muduo/base)
-add_subdirectory(${DEPEND}muduo/net)
+add_subdirectory(${DEPEND}/muduo/base)
+add_subdirectory(${DEPEND}/muduo/net)
 add_subdirectory(src)

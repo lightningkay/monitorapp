@@ -11,8 +11,8 @@ message Response {
 
 message Record {
 required int32 time = 1;
-required float stress = 2;
-required float angle = 3;
+optional float stress = 2;
+optional float angle = 3;
 }
 
 message Records {
